@@ -1,0 +1,42 @@
+/*@media (min-width: 1700px)
+	.container {
+    width: 1500px;
+	}
+}
+@media (min-width: 1900px)
+	.container {
+    width: 1700px;
+    }
+}*/
+#header{
+	padding: 20px;
+}
+.card{
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+.label{
+	margin-right:3px;
+	margin-top:10px;
+	cursor: pointer;
+}
+.active{
+	background-color: gray;
+}
+#excl{
+	margin: 10px;
+	float: right;
+}
+.sav{
+	cursor: pointer;
+	background-color: #7bde5b;
+	padding: 4px;
+    border-radius: 5px;
+}
+/*.pagination,.pagenum{
+	float: left;
+	margin-left: 20px;
+}
+.pagenum{
+	margin-top: 20px;
+}*/
