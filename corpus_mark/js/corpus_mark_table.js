@@ -371,7 +371,7 @@ $(function(){
 			sign[fileName][keyNumber][sentenceNum].markArray.push($(obj).text())
 		})
 		localStorage.setItem(fileName,JSON.stringify(sign[fileName]));
-		rightEle.parent().parent().parent().prev().children().eq(1).html("已标注");
+		rightEle.parent().parent().prev().children().eq(1).html("已标注");
 		$.each(rightEle.next().children(),function(index,item){
 			if($(item).find('span.num').html()==sentenceNum){
 				$(item).remove()
