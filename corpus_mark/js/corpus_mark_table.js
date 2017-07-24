@@ -94,13 +94,16 @@ $(function(){
 		       
 		        $("tbody tr").last().append(tdHtml);
 			 	for(var line = 0; line < content[i].length; line++){
-				 	if(reg0.test(content[i][line])){
-				 		$(".contentBox").last().append('<div style = "overflow:hidden;"><div class = "dialog noselect" style="float:left;width:auto;max-width:80%;padding:5px;background-color:#eee;border-radius:5px;margin:3px 0;">'+content[i][line]+'</div></div>')
-				 		$(".dialog").last()[0].index=line
-				 	}else if(reg1.test(content[i][line])){
-				 		$(".contentBox").last().append('<div style = "overflow:hidden;"><div class = "dialog noselect" style="float:right;width:auto;max-width:80%;padding:5px;background-color:#b5f396;border-radius:5px;margin:3px 0;">'+content[i][line]+'</div></div>')
-				 		$(".dialog").last()[0].index=line
-				 	}else{}
+			 		if(content[i][line] == serialNumber[i]){
+			 		}else{
+			 			if(reg0.test(content[i][line])){
+					 		$(".contentBox").last().append('<div style = "overflow:hidden;"><div class = "dialog noselect" style="float:left;width:auto;max-width:80%;padding:5px;background-color:#eee;border-radius:5px;margin:3px 0;">'+content[i][line]+'</div></div>')
+					 		$(".dialog").last()[0].index=line
+					 	}else if(reg1.test(content[i][line])){
+					 		$(".contentBox").last().append('<div style = "overflow:hidden;"><div class = "dialog noselect" style="float:right;width:auto;max-width:80%;padding:5px;background-color:#b5f396;border-radius:5px;margin:3px 0;">'+content[i][line]+'</div></div>')
+					 		$(".dialog").last()[0].index=line
+					 	}else{}
+			 		}
 			 	}
 			 	//将savedata数据存入sign中再生成标注
 			 	console.log(saveData)
